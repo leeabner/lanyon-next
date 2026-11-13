@@ -27,6 +27,7 @@ lanyon-hugo has not been updated since 2021 and predates most of Hugo's current 
 - Meta description, canonical link and OpenGraph tags
 - Full-content RSS feed
 - Tags and categories on posts
+- Dark mode that follows the visitor's system setting, with no JavaScript
 - Version-stamped favicon links, so browsers pick up icon changes
 - Optional social links, Disqus comments and Google Analytics
 
@@ -101,6 +102,7 @@ All of these go under `[params]` and all are optional.
 | `favicon` | Favicon, as a path under `static/` | `assets/favicon.ico` |
 | `appleTouchIcon` | Touch icon, as a path under `static/` | none |
 | `fontAwesomeKit` | [Font Awesome](https://fontawesome.com) kit ID; needed for icons in social links | none |
+| `colorScheme` | `auto` follows the visitor's system setting; `light` or `dark` forces one | `auto` |
 | `disableFonts` | Set to `true` to skip loading PT Serif and PT Sans from Google Fonts | `false` |
 | `customCSS` | List of extra stylesheets, as paths under `static/` | none |
 
@@ -179,6 +181,8 @@ To use a different colour scheme, replace the file in your own site's `assets/cs
 ## Customizing the look
 
 The stylesheets are `poole.css`, `syntax.css` and `lanyon.css` in `assets/css`. To change one, copy it to the same path in your own site and edit it there; Hugo uses your copy in place of the theme's. For small additions, use `customCSS`.
+
+The dark colours live in `assets/css/dark.css`, which only overrides colours from the other three files. Override it the same way to adjust the dark scheme.
 
 The colour themes and layout options described in the [original Lanyon README](https://github.com/poole/lanyon#options) work here as well.
 

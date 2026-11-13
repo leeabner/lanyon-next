@@ -3,6 +3,7 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="{{ with site.Params.colorScheme | default "auto" | lower }}{{ if eq . "auto" }}light dark{{ else }}{{ . }}{{ end }}{{ end }}">
 
   <title>
     {{- if .IsHome -}}
@@ -24,6 +25,12 @@
       (resources.Get "css/lanyon.css")
     | resources.Concat "css/lanyon.bundle.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{- /* Colour scheme: "auto" follows the visitor's system, "light" or "dark" forces one. */}}
+  {{- $scheme := site.Params.colorScheme | default "auto" | lower }}
+  {{- if ne $scheme "light" }}
+  {{- $dark := resources.Get "css/dark.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $dark.RelPermalink }}" integrity="{{ $dark.Data.Integrity }}"{{ if ne $scheme "dark" }} media="(prefers-color-scheme: dark)"{{ end }}>
+  {{- end }}
   {{- if not site.Params.disableFonts }}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400&display=swap">
   {{- end }}

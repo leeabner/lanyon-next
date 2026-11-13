@@ -1,0 +1,229 @@
+/*
+ * Dark colour scheme for Lanyon-Next.
+ *
+ * This file only overrides colours set in poole.css, lanyon.css and
+ * syntax.css. It is loaded after them, either always or only when the
+ * visitor's system asks for a dark scheme, depending on `params.colorScheme`.
+ */
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  color: #c5c9d0;
+  background-color: #1b1d21;
+}
+
+a {
+  color: #6cb6ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e8eaed;
+}
+
+strong {
+  color: #e8eaed;
+}
+
+a strong {
+  color: inherit;
+}
+
+hr {
+  border-top: 1px solid #33373e;
+  border-bottom: 0;
+}
+
+abbr {
+  color: #a9aeb7;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted #4a4f58;
+}
+
+code {
+  color: #ef9aa2;
+  background-color: #282b31;
+}
+
+pre {
+  background-color: #282b31;
+}
+
+pre code,
+.gist pre,
+.gist code {
+  color: inherit;
+  background-color: transparent;
+}
+
+blockquote {
+  color: #9aa0aa;
+  border-left-color: #3d424a;
+}
+
+table,
+td,
+th {
+  border-color: #3d424a;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #23262b;
+}
+
+.message {
+  color: #b3b8c0;
+  background-color: #282b31;
+}
+
+
+/* Masthead */
+
+.masthead {
+  border-bottom-color: #33373e;
+}
+
+.masthead-title,
+.masthead-title a {
+  color: #8fbbe8;
+}
+
+.masthead-title small {
+  color: #717782;
+}
+
+
+/* Posts */
+
+.page-title,
+.post-title,
+.post-title a {
+  color: #8fbbe8;
+}
+
+.post-date {
+  color: #8b919b;
+}
+
+.related {
+  border-top-color: #33373e;
+}
+
+.related-posts li small {
+  color: #8b919b;
+}
+
+.related-posts li a:hover {
+  color: #6cb6ff;
+}
+
+
+/* Pagination */
+
+.pagination {
+  color: #5d636d;
+}
+
+.pagination-item {
+  border-color: #33373e;
+}
+
+a.pagination-item:hover {
+  background-color: #282b31;
+}
+
+
+/* Sidebar and its toggle */
+
+.sidebar {
+  color: rgba(255,255,255,.65);
+  background-color: #24456a;
+}
+
+.sidebar-toggle {
+  color: #8fbbe8;
+  background-color: #282b31;
+}
+
+.sidebar-toggle:before {
+  background-image: linear-gradient(to bottom, #8fbbe8, #8fbbe8 20%, #282b31 20%, #282b31 40%, #8fbbe8 40%, #8fbbe8 60%, #282b31 60%, #282b31 80%, #8fbbe8 80%, #8fbbe8 100%);
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #24456a;
+}
+
+.sidebar-toggle:active:before,
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #24456a 20%, #24456a 40%, #fff 40%, #fff 60%, #24456a 60%, #24456a 80%, #fff 80%, #fff 100%);
+}
+
+
+/* Syntax highlighting */
+
+.highlight .hll { background-color: #3a3d2a; }
+.highlight .c,
+.highlight .c1,
+.highlight .cs,
+.highlight .ni { color: #7f8792; }
+.highlight .cm { color: #6aa9e0; }
+.highlight .cp { color: #5cc7c7; }
+.highlight .err { color: #ff8f8f; background-color: #4a2326; }
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr { color: #6cb6ff; }
+.highlight .kt { color: #5cc7d6; }
+.highlight .o { color: #a9aeb7; }
+.highlight .ow { color: #c5c9d0; }
+.highlight .gd { background-color: #4a2326; border-color: #8f3a3f; }
+.highlight .gi { background-color: #1f3d2a; border-color: #2f7d48; }
+.highlight .gr { color: #ff7b72; }
+.highlight .gh,
+.highlight .gu { color: #8fd19e; }
+.highlight .go { color: #8b919b; }
+.highlight .gp { color: #8fbbe8; }
+.highlight .gt { color: #b5d67a; }
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il { color: #ffa657; }
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1 { color: #f0a08a; }
+.highlight .si { color: #ff8f8f; }
+.highlight .sr { color: #6fd0d0; }
+.highlight .ss { color: #f2cc60; }
+.highlight .na { color: #79c0ff; }
+.highlight .nb,
+.highlight .bp { color: #7fc8c8; }
+.highlight .nc { color: #56d4a9; }
+.highlight .no { color: #a5d66a; }
+.highlight .nd,
+.highlight .nl { color: #b3b3ff; }
+.highlight .ne { color: #ff7b72; }
+.highlight .nf { color: #d9a0ff; }
+.highlight .nn { color: #56d4f5; }
+.highlight .nt { color: #7db8e8; }
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi { color: #a8d8d8; }
+.highlight .w { color: #5d636d; }
