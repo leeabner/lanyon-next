@@ -1,0 +1,5 @@
+# Theme-level configuration. Site settings belong in the site's own hugo.toml.
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.158.0"

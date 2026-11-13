@@ -4,7 +4,20 @@ A content-first blog theme for [Hugo](https://gohugo.io) with a slide-out sideba
 
 Lanyon-Next is a maintained continuation of [lanyon-hugo](https://github.com/tummychow/lanyon-hugo), tummychow's Hugo port of [Lanyon](https://github.com/poole/lanyon), the Jekyll theme by Mark Otto. It keeps Lanyon's look and updates everything underneath for current Hugo.
 
-![Screenshot](images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/leeabner/lanyon-next/main/images/screenshot.png)
+
+## How it differs from lanyon-hugo
+
+lanyon-hugo has not been updated since 2021 and predates most of Hugo's current conventions. Lanyon-Next keeps the same design and changes what sits underneath:
+
+- **Current template system.** A single `baseof.html` with blocks and the layout structure Hugo introduced in 0.146, in place of head and foot partials included by every template.
+- **Asset pipeline.** The CSS is bundled, minified and fingerprinted by Hugo Pipes instead of being served as three static files.
+- **Configurable navigation.** Sidebar links come from Hugo's menu system. The original hardcoded a "Posts" link to `/post/`.
+- **Metadata.** Pages get a meta description, a canonical link and OpenGraph tags; the original had none.
+- **A valid feed.** The RSS link in the page head points at the feed Hugo actually generates, and the feed template produces valid RSS.
+- **Taxonomies.** Posts show their tags and categories.
+- **Accessibility.** Mobile pinch-zoom is no longer disabled, and the sidebar toggle is labelled.
+- **Hugo Modules.** The theme can be installed as a module as well as a submodule.
 
 ## Features
 
