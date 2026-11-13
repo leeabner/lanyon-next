@@ -70,7 +70,7 @@ theme = "lanyon-next"
 
 [[menus.main]]
   name = "Posts"
-  pageRef = "/post"
+  pageRef = "/posts"
   weight = 10
 ```
 
@@ -100,7 +100,7 @@ Hugo's own `copyright` setting replaces the default footer line in the sidebar.
 ```toml
 [[menus.main]]
   name = "Posts"
-  pageRef = "/post"
+  pageRef = "/posts"
   weight = 10
 [[menus.main]]
   name = "About"
@@ -144,7 +144,9 @@ The theme uses Hugo's built-in templates, configured the standard way:
 
 ### Posts
 
-Put posts in a section listed in `mainSections`, for example `content/post/`. They show a date, their tags and categories, and appear on the home page and in the feed.
+Put posts in a section listed in `mainSections`, for example `content/posts/`. They show a date, their tags and categories, and appear on the home page and in the feed.
+
+The section name is your choice; nothing in the theme depends on it.
 
 ### Fixed pages
 

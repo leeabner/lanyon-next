@@ -8,17 +8,17 @@ themesDir = "../.."
 [params]
   Tagline = "A content-first Hugo theme"
   DateForm = "Jan 2, 2006"
-  mainSections = ["post"]
+  mainSections = ["posts"]
 
 # Sidebar navigation. "Home" is always added first by the theme.
 [[menus.main]]
   name = "Posts"
-  pageRef = "/post"
+  pageRef = "/posts"
   weight = 10
 
 [permalinks]
   [permalinks.page]
-    post = "/:year/:month/:day/:slug/"
+    posts = "/:year/:month/:day/:slug/"
     fixed = "/:slug/"
 
 [markup]
