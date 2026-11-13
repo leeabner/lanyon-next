@@ -1,0 +1,32 @@
+baseURL = "https://example.org/"
+locale = "en-US"
+title = "Lanyon-Next"
+theme = "lanyon-next"
+# Lets the example site find the theme when run from inside the theme repo.
+themesDir = "../.."
+
+[params]
+  Tagline = "A content-first Hugo theme"
+  DateForm = "Jan 2, 2006"
+  mainSections = ["post"]
+
+# Sidebar navigation. "Home" is always added first by the theme.
+[[menus.main]]
+  name = "Posts"
+  pageRef = "/post"
+  weight = 10
+
+[permalinks]
+  [permalinks.page]
+    post = "/:year/:month/:day/:slug/"
+    fixed = "/:slug/"
+
+[markup]
+  [markup.goldmark.renderer]
+    # The example posts contain raw HTML.
+    unsafe = true
+  [markup.goldmark.extensions]
+    typographer = true
+  [markup.highlight]
+    # Use the classes in assets/css/syntax.css instead of inline styles.
+    noClasses = false

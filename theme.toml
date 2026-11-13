@@ -1,0 +1,18 @@
+name = "Lanyon-Next"
+license = "MIT"
+licenselink = "https://github.com/leeabner/lanyon-next/blob/main/LICENSE.md"
+description = "A content-first blog theme with a slide-out sidebar. A maintained continuation of the Lanyon port for Hugo."
+homepage = "https://github.com/leeabner/lanyon-next"
+tags = ["blog", "minimal", "clean", "simple", "responsive"]
+features = ["blog", "rss", "opengraph", "taxonomies", "pagination"]
+min_version = "0.158.0"
+
+[author]
+  name = "Lee Abner"
+  homepage = "https://blog.leeabner.com/"
+
+# Lanyon-Next continues tummychow's Hugo port of mdo's Lanyon for Jekyll.
+[original]
+  author = "mdo"
+  homepage = "https://github.com/poole/lanyon"
+  repo = "https://github.com/poole/lanyon"
